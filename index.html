@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KOLAM BERITA UNTAR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>KOBETAR</h1>
+        <ul>
+            <li><a href="home.html"><i data-feather="home"> </i> Home</i></a></li>
+            <li><a href="news.html"><i data-feather="star"> </i> News </i></a></li>
+            <li><a href="category_tech.html"><i data-feather="cpu"></i> Teknologi </i></a></li>
+            <li><a href="category_sports.html"><i data-feather="heart"> </i> Olahraga </i></a></li>
+            <li><a href="category_entertainment.html"><i data-feather="music"> </i> Hiburan </i></a></li>
+            <li><a href="category_politics.html"><i data-feather="flag"> </i> Politik </i></a></li>
+            <li><a class="active" href="contact.html"><i data-feather="mail"> </i> Contact </i></a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <h2>Contact Us</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan isi form di bawah ini:</p>
+        
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 KOBETAR - Kolam Berita UNTAR. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        </script>
+</body>
+</html>
